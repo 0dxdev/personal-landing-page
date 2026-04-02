@@ -36,12 +36,13 @@ section {
 }
     
 .pfp {
-    width: 100%;
-    max-width: 500px;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    object-fit: cover;
+    width: 90vw;             /* 90% of viewport width */
+    max-width: 500px;        /* caps it on larger screens */
+    aspect-ratio: 1 / 1;     /* ensures height = width */
+    border-radius: 50%;      /* makes it a circle */
+    object-fit: cover;       /* fills circle without stretching */
+    display: block;          /* avoids inline spacing issues */
+    margin: 0 auto 20px;
 }
 
 button {
